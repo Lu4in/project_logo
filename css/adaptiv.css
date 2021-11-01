@@ -1,0 +1,152 @@
+@media(max-width:1020px){
+    .navigation{
+        height: 80px;
+    }
+    .fix-nav{
+        height: 80px;
+    }
+    .header-menu{
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        background-color: #ffffff;
+        border-bottom: 4px solid grey;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        z-index: 102;
+        flex-direction: column;
+        display: none; 
+ 
+    }
+    .fix-nav .header-menu{
+        top: 80px;
+    }
+    .header-menu li{
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .navigation .header-menu li a{
+        width:100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid rgba(0,0,0,0.03);
+    }
+    .burger-menu{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+
+
+    .navigation.active .header-menu{
+        display: block;
+    }
+
+    .sale-box{
+        height: 200px;
+    }
+}
+@media(max-width:600px){
+    .lSSlideOuter {
+        display: none;       
+    }
+    .navigation{
+        padding: 10px;
+    }
+
+    .new-arrival strong {
+        font-size: 20px;
+    }
+    .new-arrival p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .sale-box{
+        width:100%;
+        height: 180px;
+    }
+    .sale{
+        width: 100%;
+    }
+    .services{
+        width:100%;
+    }
+    .services-box{
+        width:100%;
+    }
+    .copyright{
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .login-form,
+    .sign-up-form{
+        width:90%;
+    }
+    footer {
+        height: 50px;
+    }
+}
+
+@media(max-width:340px){
+    .lSSlideOuter {
+        display: none;       
+    }
+
+    .navigation{
+        padding: 2px;
+    }
+    .new-arrival strong {
+        font-size: 18px;
+    }
+    .new-arrival p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .sale-box{
+        width:100%;
+        height: 180px;
+    }
+    .sale{
+        width: 100%;
+    }
+    .services{
+        width:100%;
+    }
+    .services-box{
+        width:100%;
+    }
+    .copyright{
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .login-form,
+    .sign-up-form{
+        width:90%;
+    }
+    footer {
+        height: 50px;
+    }
+}
