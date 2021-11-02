@@ -7,7 +7,8 @@ $(document).ready(function() {
         item:1,
         speed:900,
         slideMargin:0,
-        loop:true
+        loop:true,
+        rtl: true,
     });
 });
 
