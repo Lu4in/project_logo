@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Интернет магазин</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/adaptiv.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/lightslider.css" rel="stylesheet">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/defs.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- Социальные ссылки и телефон -->
+    <div class="social-call">
+        <div class="social">
+            <a href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
+            <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+            <a href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a>
+            <a href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+        </div>
+        <div class="phone">
+            <span>Телефон:<a class="phone_number" href="tel:+74950000000">8(495)000-00-00</a></span>
+        </div>
+    </div>
+
+    <header class="fix-nav">
+        <!-- Логотип, гамбургер, меню -->
+        <div class="navigation">
+
+            <a href="index.html" class="logo"><img alt="" src="img/logo.png" alt="Логотип" /></a>
+
+            <div class="burger-menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Правое меню -->
+            <div class="right-menu">
+
+                <div id="search-hide">
+                    <input id="search" name="search" type="text" placeholder="Поиск товара...">
+
+                    <a href="javascript:void(0);" class="search">
+                        <img src="img/search.svg" alt="Поиск">
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="user">
+                    <img src="img/user.svg" alt="Логин">
+                </a>
+                <a href="order.html" class="cart">
+                    <img src="img/basket.svg" alt="Корзина">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Логин и регистрация -->
+        <div class="form" id="user-account">
+            <!-- Логин -->
+            <div class="login-form">
+                <!-- Кнопка закрытия -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <img src="img/close.svg" height="20px" alt="Закрыть">
+                </a>
+                <strong>Логин</strong>
+                <!--Поля ввода-->
+                <form>
+                    <input type="email" name="email" placeholder="Введите email" required>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <input type="submit" value="Логин">
+                </form>
+                <!--Создать и востановить аккаунт-->
+                <div class="form-btns">
+                    <a href="#" class="forget">Забыли пароль?</a>
+                    <a href="javascript:void(0);" class="sign-up-btn">Создать аккаунт</a>
+                </div>
+            </div>
+            <!--Новый аккаунт-->
+            <div class="sign-up-form">
+                <!-- Кнопка закрытия -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <img src="img/close.svg" height="20px" alt="Закрыть">
+                </a>
+                <strong>Новый аккаунт</strong>
+                <!--Поля ввода-->
+                <form>
+                    <input type="text" name="fullname" placeholder="Имя" required>
+                    <input type="email" name="email" placeholder="Электронная почта" required>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <input type="submit" value="Создать">
+                </form>
+                <!--Кнопка возвращения-->
+                <div class="form-btns">
+                    <a href="javascript:void(0);" class="already-account">
+                        У вас есть аккаунт?</a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <aside>
+            <nav class="menu_color">
+                <ul id="myBtnContainer" class="my_menu">
+<li class="btn active" onclick="filterSelection('all')"><a  href="#/">Весь товар</a></li>
+
+<li class="btn" onclick="filterSelection('komp')"><a href="#/">Компьютеры</a></li>
+                    
+<li class="btn" onclick="filterSelection('compl')"><a href="#/">Комплектующие</a></li>
+                    
+<li class="btn" onclick="filterSelection('akses')"><a href="#/">Акссессуары</a></li>
+                    
+<li class="btn" onclick="filterSelection('byt')"><a href="#/">Бытовая техника</a></li>
+                    
+<li class="btn" onclick="filterSelection('other')"><a href="#/">Другое</a></li>
+                </ul>
+            </nav>
+    </aside>
+    <section class="new-arrival">
+    <div class="product-right">
+        <!--Заголовок-------->
+        <div class="catalog-header">
+            <strong>Каталог</strong>
+        </div>
+
+        <div class="product-container container-cat">
+
+            <!--Карточка товара 1---------->
+            <div class="product-box filterDiv compl">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart">
+                        <img src="img/basket.svg" alt="Корзина">
+                    </a>
+                    <!--Картинка------>
+                    <img alt="" src="img/01.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Процессор AMD A10 8770 PRO</a>
+                    <span class="p-price">5950 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 2---------->
+            <div class="product-box filterDiv other">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/02.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Игра PS5 Resident Evil Village</a>
+                    <span class="p-price">4749 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 3---------->
+            <div class="product-box filterDiv byt">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/03.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Робот-пылесос HOBOT LEGEE-669</a>
+                    <span class="p-price">26 990 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 4---------->
+            <div class="product-box filterDiv akses">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/04.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Карта памяти SDHC UHS-I SANDISK Ultra 256 ГБ</a>
+                    <span class="p-price">2510 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 5---------->
+            <div class="product-box filterDiv other">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="item.html" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/05.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="item.html" class="p-name">Фитнес-трекер XIAOMI Mi Band 6</a>
+                    <span class="p-price">3990 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 6---------->
+            <div class="product-box filterDiv byt">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/06.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Электрическая плита ELECTROLUX RKI560200W</a>
+                    <span class="p-price">67 990 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 7---------->
+            <div class="product-box filterDiv komp">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/07.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Моноблок LENOVO IdeaCentre 3 24IIL5</a>
+                    <span class="p-price">44 690 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 8---------->
+            <div class="product-box filterDiv other">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart">
+                        <img src="img/basket.svg" alt="Корзина">
+                    </a>
+                    <!--Картинка------>
+                    <img alt="" src="img/08.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Электробайк HIPER Engine HE-BF204</a>
+                    <span class="p-price">50 900 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 9---------->
+            <div class="product-box filterDiv byt">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/09.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Телевизор LG 55UP78006LC</a>
+                    <span class="p-price">58 990 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 10---------->
+            <div class="product-box filterDiv komp">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/10.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Планшет LENOVO Tab M10 TB-X306X</a>
+                    <span class="p-price">16 990 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 11---------->
+            <div class="product-box filterDiv compl">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/11.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Жесткий диск WD Purple WD82PURZ</a>
+                    <span class="p-price">24 990 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 12---------->
+            <div class="product-box filterDiv compl">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/12.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Процессор Intel Core i5 9500</a>
+                    <span class="p-price">16 290 ₽</span>
+                </div>
+            </div>
+            <!--Карточка товара 13---------->
+            <div class="product-box filterDiv other">
+                <!--Детали товара------------>
+                <div class="product-img">
+                    <!--Иконка корзины---->
+                    <a href="#" class="add-cart"><img src="img/basket.svg" alt="Корзина"></a>
+                    <!--Картинка------>
+                    <img alt="" src="img/13.jpg">
+                </div>
+                <!--Название товара и цена-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Кресло игровое A4TECH X7 GG-1000W</a>
+                    <span class="p-price">7990 ₽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <span class="copyright">
+            © LOGO, 2008–2021
+        </span>
+    </footer>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        // Добавьте активный класс к текущей кнопке (выделите его)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Просмотр фотографий</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+<link href="goodsgallery.style.css" rel="stylesheet">
+
+<body>
+<div class="wrap">
+	<h1>Просмотр фотографий</h1>
+	<div class="flex" data-gallary>
+		<div class="container">
+			<div class="viewport">
+				<div class="thumbs content-box">
+					<img src="images/thumbnails/IMG_2212.jpg">
+					<img src="images/thumbnails/IMG_2222.jpg">
+					<img src="images/thumbnails/IMG_2227.jpg">
+					<img src="images/thumbnails/IMG_2235.jpg">
+					<img src="images/thumbnails/IMG_2259.jpg">
+					<img src="images/thumbnails/IMG_2269.jpg">
+					<img src="images/thumbnails/IMG_2273.jpg">
+					<img src="images/thumbnails/IMG_2287.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="photo-box">
+				<img src="images/photos/IMG_2212.jpg">
+			</div>
+
+			<div class="flex control-row">
+				<button type="button" class="btn" data-control="first">First</button>
+				<button type="button" class="btn" data-control="prev">Previous</button>
+				<button type="button" class="btn" data-control="next">Next</button>
+				<button type="button" class="btn" data-control="last">Last</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="goodsgallery.function.js"></script>
+<script src="scrollbox.function.js"></script>
+</body>
+</html>

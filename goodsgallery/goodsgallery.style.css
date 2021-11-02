@@ -1,0 +1,168 @@
+/* grid */
+
+.s-wrap {
+	height: 100%;
+	line-height: 1;
+}
+
+.s-wrap {
+	width: 1200px;
+	position: relative;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	float: left; width: 40%;
+}
+.right-card {
+	float: right; width: 60%;
+}
+
+/* content */
+
+.photo-box img{
+	height: 400px;
+	cursor: pointer;
+}
+
+.thumbs {
+	overflow: hidden;
+}
+
+.thumbs img {
+	height: 100px;
+	cursor: pointer;
+}
+
+.thumbs img+img {
+	margin-top: 2px;
+}
+
+.control-row {
+	padding: 20px 0 30px;
+}
+
+/* scroll bar */
+
+.s-container {
+	width: 100px;
+	height: 450px;
+	position: relative;
+	margin-right: 12px;
+}
+
+.viewport {
+	overflow: hidden;
+	position: absolute;
+	left: 2px;
+	right: 3px;
+	top: 0;
+	bottom: 0;
+}
+
+.content-box {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: -17px;
+	overflow-y: scroll;
+}
+
+.scrollbar, .scroller {
+	width: 4px;
+	position: absolute;
+	top: 0;
+}
+
+.scrollbar {
+	right: 0;
+	bottom: 0;
+}
+
+.scroller {
+	left: 0;
+	border-radius: 2px;
+	background: #c6c6c6;
+	cursor: pointer;
+}
+
+.control-row button {
+	width: 100px;
+	margin: 5px;
+	margin-right: 80px;
+	background: white;
+	font-family: 'Montserrat';
+	font-size: 16px;
+}
+
+/* Табы */
+
+.tabs {
+	font-size: 0;
+	}
+	
+	.tabs>input[type="radio"] {
+	display: none;
+	}
+	
+	.tabs>div {
+	/* скрыть контент по умолчанию */
+	display: none;
+	border: 1px solid #e0e0e0;
+	padding: 10px 15px;
+	font-size: 16px;
+	}
+	
+	/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+	#tab-btn-1:checked~#content-1,
+	#tab-btn-2:checked~#content-2,
+	#tab-btn-3:checked~#content-3 {
+	display: block;
+	}
+	
+	.tabs>label {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	background-color: #f5f5f5;
+	border: 1px solid #e0e0e0;
+	padding: 2px 8px;
+	font-size: 16px;
+	line-height: 1.5;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	top: 1px;
+	}
+	
+	.tabs>label:not(:first-of-type) {
+	border-left: none;
+	}
+	
+	.tabs>input[type="radio"]:checked+label {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+	}
+
+	.right-card button {
+		width: 200px;
+		height: 50px;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		margin-right: 50px;
+		cursor: pointer;
+		margin-bottom: 50px;
+		font-weight: bold;
+	}
+	.right-card span {
+		font-family: 'Montserrat';
+		font-size: 50px;
+	}
+	footer {
+		width: 100%;
+	}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Интернет магазин</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/adaptiv.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/lightslider.css" rel="stylesheet">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/defs.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/main.js"></script>
+
+    <link href="goodsgallery/goodsgallery.style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Социальные ссылки и телефон -->
+    <div class="social-call">
+        <div class="social">
+            <a href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
+            <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+            <a href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a>
+            <a href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+        </div>
+        <div class="phone">
+            <span>Телефон:<a class="phone_number" href="tel:+74950000000">8(495)000-00-00</a></span>
+        </div>
+    </div>
+
+    <header class="fix-nav">
+        <!-- Логотип, гамбургер, меню -->
+        <div class="navigation">
+
+            <a href="index.html" class="logo"><img alt="" src="img/logo.png" alt="Логотип" /></a>
+
+            <div class="burger-menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Правое меню -->
+            <div class="right-menu">
+
+                <div id="search-hide">
+                    <input id="search" name="search" type="text" placeholder="Поиск товара...">
+
+                    <a href="javascript:void(0);" class="search">
+                        <img src="img/search.svg" alt="Поиск">
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="user">
+                    <img src="img/user.svg" alt="Логин">
+                </a>
+                <a href="order.html" class="cart">
+                    <img src="img/basket.svg" alt="Корзина">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Логин и регистрация -->
+        <div class="form" id="user-account">
+            <!-- Логин -->
+            <div class="login-form">
+                <!-- Кнопка закрытия -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <img src="img/close.svg" height="20px" alt="Закрыть">
+                </a>
+                <strong>Логин</strong>
+                <!--Поля ввода-->
+                <form>
+                    <input type="email" name="email" placeholder="Введите email" required>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <input type="submit" value="Логин">
+                </form>
+                <!--Создать и востановить аккаунт-->
+                <div class="form-btns">
+                    <a href="#" class="forget">Забыли пароль?</a>
+                    <a href="javascript:void(0);" class="sign-up-btn">Создать аккаунт</a>
+                </div>
+            </div>
+            <!--Новый аккаунт-->
+            <div class="sign-up-form">
+                <!-- Кнопка закрытия -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <img src="img/close.svg" height="20px" alt="Закрыть">
+                </a>
+                <strong>Новый аккаунт</strong>
+                <!--Поля ввода-->
+                <form>
+                    <input type="text" name="fullname" placeholder="Имя" required>
+                    <input type="email" name="email" placeholder="Электронная почта" required>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <input type="submit" value="Создать">
+                </form>
+                <!--Кнопка возвращения-->
+                <div class="form-btns">
+                    <a href="javascript:void(0);" class="already-account">
+                        У вас есть аккаунт?</a>
+
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+<div class="s-wrap">
+    <div class="flex" data-gallary>
+		<div class="s-container">
+			<div class="viewport">
+				<div class="thumbs content-box">
+					<img src="goodsgallery/images/thumbnails/IMG_2212.jpg">
+					<img src="goodsgallery/images/thumbnails/IMG_2222.jpg">
+					<img src="goodsgallery/images/thumbnails/IMG_2227.jpg">
+					<img src="goodsgallery/images/thumbnails/IMG_2235.jpg">
+					<img src="goodsgallery/images/thumbnails/IMG_2259.jpg">
+					<img src="goodsgallery/images/thumbnails/IMG_2269.jpg">
+					<img src="goodsgallery/images/thumbnails/IMG_2273.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="photo-box">
+				<img src="goodsgallery/images/photos/IMG_2212.jpg">
+			</div>
+
+			<div class="flex control-row">
+				<button type="button" class="btn" data-control="prev">Назад</button>
+				<button type="button" class="btn" data-control="next">Вперед</button>
+			</div>
+		</div>
+	</div>
+    <div class="right-card">
+        <div>
+            <h1>Фитнес-трекер XIAOMI Mi Band 6 XMSH15HM, 1.56", черный / черный [bhr4951gl]</h1>
+        </div>
+        <div>
+            <button onclick="window.location.href = 'order.html';">Купить</button><span>3990  ₽</span>
+        </div>
+        <div>
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">О товаре</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">Характеристики
+                </label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                <label for="tab-btn-3">Отзывы
+                </label>
+                
+                <div id="content-1">
+                    <h5>
+                    30 спортивных и фитнес-режимов работы; датчик PPG для отслеживания изменений частоты сердечных сокращений; мониторинг измерения уровня содержания кислорода в крови (показатель SpO2).
+                </h5>
+                </div>
+                <div id="content-2">
+                    Тип дисплея: AMOLED<br><br>
+                    Диагональ дисплея: 1.56 "<br><br>
+                    Сенсорный дисплей: есть<br><br>
+                    Поддержка Bluetooth: есть<br><br>
+
+                    Шагомер: есть<br><br>
+                    Акселерометр: есть<br><br>
+                    Датчик определения сердечного ритма: есть<br><br>
+                </div>
+                <div id="content-3">
+                  Отзывов пока нет.
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <span class="copyright">
+        © LOGO, 2008–2021
+    </span>
+</footer>
+<script src="goodsgallery/goodsgallery.function.js"></script>
+<script src="goodsgallery/scrollbox.function.js"></script>
+</body>
+
+</html>
