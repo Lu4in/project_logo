@@ -140,31 +140,12 @@
             © LOGO, 2008–2021
         </span>
     </footer>
-    <script src="//api-maps.yandex.ru/2.0/?apikey=6f93606d-8948-4c52-8db6-363d427c0571&load=package.full&lang=ru-RU"></script>
+    <script src="//api-maps.yandex.ru/2.0/?apikey=149168e4-ac56-424e-8fd6-3e4462f9a9fc&load=package.full&lang=ru-RU"></script>
     <script>
     ymaps.ready(init); 
     function init(){
         var myMap = new ymaps.Map("map",{center: [44.419318, 38.207287],zoom: 17});
-        
-        // Элементы управления картой
-        //myMap.controls.add("zoomControl").add("typeSelector").add("mapTools");
-        
-        ymaps.geocode("г. Москва, Тверская 7").then(function (res) {
-            var coord = res.geoObjects.get(0).geometry.getCoordinates();
-            var myPlacemark = new ymaps.Placemark(coord, {}, {
-                iconImageHref: "/img/map.png",
-                iconImageSize: [54, 74],
-                iconImageOffset: [-27, -74]
-            });
-            myMap.geoObjects.add(myPlacemark);
-            myMap.setCenter(coord);	
-                
-            // Сдвиг центра карты влево
-            var newcoord = myMap.getGlobalPixelCenter();
-            newcoord[0] += 150;
-            myMap.setGlobalPixelCenter(newcoord);				
-        });
-    }
+        }
     </script>
 </body>
 
