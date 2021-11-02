@@ -196,6 +196,7 @@ a {
     margin-top: 10px;
     border-radius: 3px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .form-btns {
@@ -363,7 +364,7 @@ a {
 .add-cart {
     position: absolute;
     right: -20px;
-    top: 10px;
+    top: 150px;
     width: 50px;
     height: 50px;
     display: flex;
@@ -372,7 +373,7 @@ a {
 }
 
 .add-cart:hover {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    filter: invert(50%) sepia(11%) saturate(6%) hue-rotate(80deg) brightness(98%) contrast(93%);
     transition: all ease 0.2s;
 }
 
@@ -636,6 +637,7 @@ fieldset {
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* Календарь */
@@ -764,7 +766,7 @@ fieldset {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .wrp {
@@ -928,6 +930,7 @@ aside {
 }
 
 
-
-/* Галлерея  */
+.container-cat {
+    width: 100%;
+}
 
