@@ -120,14 +120,59 @@
     
     <div class="contact-logo">
         <strong>Контакты</strong>
+        <p>Если у Вас появились вопросы – напишите или позвоните.</p>
     </div>
+
+    <div class="f-container">
+        <form action="#">
+          <div class="f-row">
+            <div class="col-25">
+              <label for="fname">Имя</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="col-25">
+              <label for="lname">Фамилия</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия..">
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="col-25">
+              <label for="country">Город</label>
+            </div>
+            <div class="col-75">
+              <select id="city" name="city">
+                <option value="moscow">Москва</option>
+                <option value="peterburg">Санкт-Петербург</option>
+                <option value="kazan">Казань</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="col-25">
+              <label for="subject">Вопрос</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Написать нечто.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="f-row">
+            <input type="submit" value="Отправить">
+          </div>
+        </form>
+      </div>
 
 
     <div class="map">	
         <div class="wrp">
             <div class="map-box">
                 <h2>Наши контакты</h2>
-                <p>рядом с Геленджиком, Дворец</p>
+                <p>город Москва, Москва-Сити</p>
                 <p><a href="tel:+74950000000">8(495)000-00-00</a></p>
                 <p><a href="mailto:pishite@nam.ru">pishite@nam.ru</a></p>
             </div>
@@ -135,11 +180,36 @@
         <div id="map"></div>
     </div> 
 
-    <footer>
-        <span class="copyright">
-            © LOGO, 2008–2021
-        </span>
-    </footer>
+    <footer class="footer-distributed">
+
+        <div class="footer-right social">
+  
+            <a href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
+            <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+            <a href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a>
+            <a href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+  
+        </div>
+  
+        <nav class="footer-left">
+  
+          <nav class="footer-links">
+            <a href="index.html">Главная</a>
+  
+            <a href="catalog.html">Каталог</a>
+  
+            <a href="#">Акции</a>
+  
+            <a href="#">Доставка</a>
+  
+            <a href="contacts.html">Контакты</a>
+  
+          <nav>
+  
+          <span class="copyright">LOGO &copy; 2021</span>
+        </div>
+  
+      </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=149168e4-ac56-424e-8fd6-3e4462f9a9fc&load=package.full&lang=ru-RU"></script>
     <script src="js/ya.js"></script>
 </body>

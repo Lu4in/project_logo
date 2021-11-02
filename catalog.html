@@ -348,55 +348,37 @@
         </div>
     </div>
 </section>
-    <footer>
-        <span class="copyright">
-            © LOGO, 2008–2021
-        </span>
-    </footer>
-    <script>
-        filterSelection("all")
-        function filterSelection(c) {
-          var x, i;
-          x = document.getElementsByClassName("filterDiv");
-          if (c == "all") c = "";
-          for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-          }
-        }
-        
-        function w3AddClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-          }
-        }
-        
-        function w3RemoveClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);     
-            }
-          }
-          element.className = arr1.join(" ");
-        }
-        
-        // Добавьте активный класс к текущей кнопке (выделите его)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-          });
-        }
-        </script>
+<footer class="footer-distributed">
+
+    <div class="footer-right social">
+
+        <a href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
+        <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+        <a href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a>
+        <a href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+
+    </div>
+
+    <nav class="footer-left">
+
+      <nav class="footer-links">
+        <a href="index.html">Главная</a>
+
+        <a href="catalog.html">Каталог</a>
+
+        <a href="#">Акции</a>
+
+        <a href="#">Доставка</a>
+
+        <a href="contacts.html">Контакты</a>
+
+      <nav>
+
+      <span class="copyright">LOGO &copy; 2021</span>
+    </div>
+
+  </footer>
+    <script src="js/catalog.js"></script>
 </body>
 
 </html>

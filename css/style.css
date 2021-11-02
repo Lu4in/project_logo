@@ -312,6 +312,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .product-box {
@@ -438,6 +439,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .services-box {
@@ -470,7 +472,7 @@ a {
 
 /* Подвал */
 
-footer {
+/* footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -480,12 +482,109 @@ footer {
     height: 100px;
     background: white;
     padding: 0px 45px;
-}
+} */
 
 .copyright {
     font-size: 15px;
-    color: black;
+    line-height: 60px;
+    color: grey;
     letter-spacing: 1px;
+}
+
+
+/* section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  /* font: normal 16px sans-serif; */
+  padding: 20px 45px;
+}
+
+.footer-distributed .footer-left p {
+  color: grey;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed nav.footer-links {
+  font-size: 15px;
+  color: black;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+  font-family: 'Montserrat';
+}
+
+.footer-distributed nav.footer-links a {
+  display: inline-block;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  transition: ease .25s;
+  padding-right: 10px;
+}
+nav.footer-links a:hover {
+    color: white;
+}
+
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 2px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+  border-radius: 50%;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:none;}
+
+/* Адаптивность */
+
+@media (max-width: 720px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+  footer {
+      height: 200px;
+  }
 }
 
 /* Корзина */
@@ -639,6 +738,15 @@ fieldset {
     text-transform: uppercase;
     cursor: pointer;
 }
+main .empty {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+
+}
+
 
 /* Календарь */
 
@@ -646,30 +754,29 @@ fieldset {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -250px 0 0 -250px;
-    width: 500px;
-    padding: 50px;
+    margin: -180px 0 0 -170px;
+    /* width: 500px; */
+    padding: 20px;
     background: white;
     border-radius: 50px;
 }
 
 .dp_header {
     text-align: center;
-    height: 34px;
+    height: 20px;
 }
 
 .dp_header>b {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 .prev, .bigprev, .next, .bignext {
     display: block;
-    width: 32px;
+    width: 20px;
     font-size: 18px;
     font-weight: bold;
-    line-height: 32px;
-    border: 1px solid #999;
+    line-height: 20px;
     cursor: pointer;
     color: #999;
 }
@@ -694,22 +801,28 @@ fieldset {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto;
     margin-top: 1em;
-    gap: 11px;
+    gap: 3px;
 }
 
 .dp_grid>span {
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .headday {
     font-weight: bold;
-    padding: 0.5em;
+    padding: 5px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
 }
 
 .getter {
     cursor: pointer;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .getter:hover {
@@ -768,6 +881,11 @@ fieldset {
     flex-direction: column;
     margin-bottom: 100px;
 }
+.contact-logo p {
+    color: grey;
+    margin: 10px;
+    font-size: 15px;
+}
 
 .wrp {
     max-width: 900px;
@@ -806,6 +924,76 @@ fieldset {
     height: 350px;
     overflow: hidden;
 }
+
+
+/* Форма контактов */
+
+.f-container input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+  }
+
+  .f-container {
+    margin: 0 100px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Очистить поплавки после столбцов */
+  .f-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Адаптивный макет - когда экран меньше 600 пикселей в ширину, сделайте два столбца укладываются друг на друга, а не рядом друг с другом */
+  @media screen and (max-width: 700px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .f-container {
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+
+  }
+
+
 
 /* Каталог */
 
@@ -934,3 +1122,15 @@ aside {
     width: 100%;
 }
 
+.wrap-card {
+ /* width: 60%;
+ float: right;
+ display: flex; */
+}
+
+.product-name {
+
+}
+.product-name h1{
+    font-size: 26px;
+}

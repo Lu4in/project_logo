@@ -3,23 +3,28 @@
 .s-wrap {
 	height: 100%;
 	line-height: 1;
+	display: flex;
 }
 
 .s-wrap {
-	width: 1200px;
+	/* min-width: 1200px; */
 	position: relative;
 	padding: 20px;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	float: left; width: 40%;
+	/* float: left; width: 40%; */
 }
 .right-card {
-	float: right; width: 60%;
+	min-width: 100%;
+    min-height: 100%;
+    position: relative;
+	/* float: right; width: 60%; */
 }
 
 /* content */
@@ -182,9 +187,10 @@
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 	}
-	.right-card span {
+	.button-item p {
 		font-family: 'Montserrat';
 		font-size: 50px;
+		margin-left:20px;
 	}
 	footer {
 		width: 100%;
