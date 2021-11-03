@@ -154,6 +154,29 @@
     .my_menu {
         margin-top: 5px;
     }
+    .table .id, .table .delete {
+        display: none;
+    }
+    tr th:first-child {
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .table .quantity button{
+        background: none;
+        color: black;
+        font-size: 20px;
+
+    }
+    .table th {
+        font-size: 13px;
+    }
+    .table td {
+        font-size: 13px;
+    }
+    .table .quantity span {
+        font-size: 18px;
+    }
 }
 
 @media(max-width:400px){
